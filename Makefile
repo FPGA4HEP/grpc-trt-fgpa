@@ -15,6 +15,10 @@ LDFLAGS = -Wl,-rpath,/usr/local/lib\
 
 COMMON_REPO := ./hls4ml_c/
 
+TARGET := hw
+HOST_ARCH := x86
+SYSROOT :=
+
 include $(COMMON_REPO)/utility/utils.mk
 include $(COMMON_REPO)/libs/xcl2/xcl2.mk
 include $(COMMON_REPO)/libs/opencl/opencl.mk
